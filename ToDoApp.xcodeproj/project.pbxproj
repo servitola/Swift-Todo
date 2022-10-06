@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2166213828EF4A6900EF8DE7 /* AddNewTodoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2166213728EF4A6900EF8DE7 /* AddNewTodoViewController.storyboard */; };
+		2166213A28EF5C8000EF8DE7 /* ToDoListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2166213928EF5C8000EF8DE7 /* ToDoListViewController.storyboard */; };
 		219CB2A128ED6761003B6FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219CB2A028ED6761003B6FC4 /* AppDelegate.swift */; };
 		219CB2A328ED6761003B6FC4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219CB2A228ED6761003B6FC4 /* SceneDelegate.swift */; };
 		219CB2A528ED6761003B6FC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219CB2A428ED6761003B6FC4 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		2166213728EF4A6900EF8DE7 /* AddNewTodoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewTodoViewController.storyboard; sourceTree = "<group>"; };
+		2166213928EF5C8000EF8DE7 /* ToDoListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDoListViewController.storyboard; sourceTree = "<group>"; };
 		219CB29D28ED6761003B6FC4 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		219CB2A028ED6761003B6FC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		219CB2A228ED6761003B6FC4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				21C6BC6B28EF208000573BE8 /* ToDoListViewController.swift */,
 				21C6BC6D28EF209000573BE8 /* AddNewTodoViewController.swift */,
 				2166213728EF4A6900EF8DE7 /* AddNewTodoViewController.storyboard */,
+				2166213928EF5C8000EF8DE7 /* ToDoListViewController.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				219CB2AD28ED6762003B6FC4 /* LaunchScreen.storyboard in Resources */,
 				219CB2AA28ED6762003B6FC4 /* Assets.xcassets in Resources */,
+				2166213A28EF5C8000EF8DE7 /* ToDoListViewController.storyboard in Resources */,
 				2166213828EF4A6900EF8DE7 /* AddNewTodoViewController.storyboard in Resources */,
 				219CB2A828ED6761003B6FC4 /* Main.storyboard in Resources */,
 			);
