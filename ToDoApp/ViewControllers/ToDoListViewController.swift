@@ -15,10 +15,10 @@ class ToDoListViewController: UIViewController {
                 let toDoArray = try decoder.decode([ToDo].self, from: Data(jsonData.utf8))
                 
                 toDoArray.forEach({
-                    let labelView = UILabel()
-                    labelView.text = $0.title
-                    labelView.backgroundColor = UIColor.red
-                    ContentStackView.addArrangedSubview(labelView)
+                    let toDoCard = ToDoCardView()
+                    toDoCard.initView(toDo: $0)
+                    
+                    ContentStackView.addArrangedSubview(toDoCard)
                 })
                 
             }
