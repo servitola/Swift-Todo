@@ -26,6 +26,9 @@
                                 <rect key="frame" x="156" y="128" width="78" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system" title="Add"/>
+                                <connections>
+                                    <action selector="OnAddNewToDoButtonClick" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hbZ-II-dUy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
