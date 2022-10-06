@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2147FD0C28EF668900D0F9CF /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2147FD0B28EF668900D0F9CF /* ToDo.swift */; };
 		2166213828EF4A6900EF8DE7 /* AddNewTodoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2166213728EF4A6900EF8DE7 /* AddNewTodoViewController.storyboard */; };
 		2166213A28EF5C8000EF8DE7 /* ToDoListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2166213928EF5C8000EF8DE7 /* ToDoListViewController.storyboard */; };
 		219CB2A128ED6761003B6FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219CB2A028ED6761003B6FC4 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2147FD0B28EF668900D0F9CF /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		2166213728EF4A6900EF8DE7 /* AddNewTodoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNewTodoViewController.storyboard; sourceTree = "<group>"; };
 		2166213928EF5C8000EF8DE7 /* ToDoListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDoListViewController.storyboard; sourceTree = "<group>"; };
 		219CB29D28ED6761003B6FC4 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2147FD0A28EF667600D0F9CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2147FD0B28EF668900D0F9CF /* ToDo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		219CB29428ED6761003B6FC4 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				21C6BC6A28EF1BD300573BE8 /* ViewControllers */,
+				2147FD0A28EF667600D0F9CF /* Model */,
 				219CB2A028ED6761003B6FC4 /* AppDelegate.swift */,
 				219CB2A228ED6761003B6FC4 /* SceneDelegate.swift */,
 				219CB2A428ED6761003B6FC4 /* ViewController.swift */,
@@ -164,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C6BC6928EF1BC100573BE8 /* MainTabBarController.swift in Sources */,
+				2147FD0C28EF668900D0F9CF /* ToDo.swift in Sources */,
 				219CB2A528ED6761003B6FC4 /* ViewController.swift in Sources */,
 				219CB2A128ED6761003B6FC4 /* AppDelegate.swift in Sources */,
 				21C6BC6C28EF208000573BE8 /* ToDoListViewController.swift in Sources */,
