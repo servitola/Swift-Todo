@@ -13,6 +13,7 @@
 		219CB2A828ED6761003B6FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219CB2A628ED6761003B6FC4 /* Main.storyboard */; };
 		219CB2AA28ED6762003B6FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219CB2A928ED6762003B6FC4 /* Assets.xcassets */; };
 		219CB2AD28ED6762003B6FC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219CB2AB28ED6762003B6FC4 /* LaunchScreen.storyboard */; };
+		21C6BC6928EF1BC100573BE8 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6BC6828EF1BC100573BE8 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		219CB2A928ED6762003B6FC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		219CB2AC28ED6762003B6FC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		219CB2AE28ED6762003B6FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21C6BC6828EF1BC100573BE8 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		219CB29F28ED6761003B6FC4 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				21C6BC6A28EF1BD300573BE8 /* ViewControllers */,
 				219CB2A028ED6761003B6FC4 /* AppDelegate.swift */,
 				219CB2A228ED6761003B6FC4 /* SceneDelegate.swift */,
 				219CB2A428ED6761003B6FC4 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				219CB2AE28ED6762003B6FC4 /* Info.plist */,
 			);
 			path = ToDoApp;
+			sourceTree = "<group>";
+		};
+		21C6BC6A28EF1BD300573BE8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				21C6BC6828EF1BC100573BE8 /* MainTabBarController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C6BC6928EF1BC100573BE8 /* MainTabBarController.swift in Sources */,
 				219CB2A528ED6761003B6FC4 /* ViewController.swift in Sources */,
 				219CB2A128ED6761003B6FC4 /* AppDelegate.swift in Sources */,
 				219CB2A328ED6761003B6FC4 /* SceneDelegate.swift in Sources */,
