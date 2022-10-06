@@ -1,12 +1,11 @@
 import UIKit
 
-class Tab1ViewController: UIViewController {
+class AddNewTodoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.systemMint
         
-        self.view.backgroundColor = UIColor.systemBackground
-
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -14,20 +13,22 @@ class Tab1ViewController: UIViewController {
         verticalStackView.axis = .vertical
         verticalStackView.spacing = 10
         verticalStackView.translatesAutoresizingMaskIntoConstraints = false
+        verticalStackView.alignment = .center
         
         view.addSubview(scrollView)
         scrollView.addSubview(verticalStackView)
         
-        for _ in 1...50 {
-            let labelView = UILabel()
-            labelView.text = "Следующая вещь на моем пути"
-            labelView.backgroundColor = UIColor.red
-            verticalStackView.addArrangedSubview(labelView)
-        }
+        let addNewThingTodoTextField = UITextField()
+        addNewThingTodoTextField.placeholder = "Введите новое дельце"
+        addNewThingTodoTextField.backgroundColor = .systemBackground
+        verticalStackView.addArrangedSubview(addNewThingTodoTextField)
+        
+        addNewThingTodoTextField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8).isActive = true
+        addNewThingTodoTextField.heightAnchor.constraint(equalToConstant: 50).isActive = true
         
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-        scrollView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+        scrollView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
         scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
 
         verticalStackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
