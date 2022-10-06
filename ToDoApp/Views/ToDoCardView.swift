@@ -3,6 +3,10 @@ import UIKit
 
 class ToDoCardView : UIView
 {
+    var toDo: ToDo?
+    let deleteButton = UIButton()
+    let label = UILabel()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -13,23 +17,23 @@ class ToDoCardView : UIView
     
     func initView(toDo: ToDo)
     {
-        let label = UILabel()
         label.text = toDo.title
         label.backgroundColor = UIColor.systemBackground
         
-        let button = UIButton()
-        button.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        
+        deleteButton.backgroundColor = .green
+        deleteButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        deleteButton.addTarget(self, action: #selector(onDeleteButtonClicked), for: .touchUpInside)
+       
         if toDo.isDone {
-            button.isHidden = true
+            deleteButton.isHidden = true
         }
         
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .horizontal
         stackView.addArrangedSubview(label)
-        stackView.addArrangedSubview(button)
-        button.setImage(UIImage(systemName: "minus"), for: UIControl.State.normal)
+        stackView.addArrangedSubview(deleteButton)
+        deleteButton.setImage(UIImage(systemName: "minus"), for: UIControl.State.normal)
         addSubview(stackView)
         
         stackView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
@@ -38,5 +42,11 @@ class ToDoCardView : UIView
         stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         
         self.heightAnchor.constraint(equalToConstant: 50).isActive = true
+    }
+    
+    @objc func onDeleteButtonClicked() {
+        
+        self.toDo?.isDone = true
+        self.deleteButton.isHidden = true
     }
 }

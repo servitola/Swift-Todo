@@ -1,8 +1,8 @@
 import Foundation
 
 class ToDo : Codable {
-    let title: String
-    let isDone: Bool
+    var title: String
+    var isDone: Bool
     
     init(title: String, isDone: Bool) {
         self.title = title
