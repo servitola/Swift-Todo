@@ -8,11 +8,23 @@ class ToDoListViewController: UIViewController {
         ContentStackView.arrangedSubviews.forEach({ ContentStackView.removeArrangedSubview($0)})
         
         let defaults = UserDefaults.standard
-        if let todoItems = defaults.string(forKey: "todo items") {
-            let labelView = UILabel()
-            labelView.text = todoItems
-            labelView.backgroundColor = UIColor.red
-            ContentStackView.addArrangedSubview(labelView)
+        
+        if let jsonData = defaults.string(forKey: "todo items") {
+            let decoder = JSONDecoder()
+            do {
+                let toDoArray = try decoder.decode([ToDo].self, from: Data(jsonData.utf8))
+                
+                toDoArray.forEach({
+                    let labelView = UILabel()
+                    labelView.text = $0.title
+                    labelView.backgroundColor = UIColor.red
+                    ContentStackView.addArrangedSubview(labelView)
+                })
+                
+            }
+            catch {
+                
+            }
         }
     }
     
