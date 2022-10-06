@@ -14,6 +14,8 @@
 		219CB2AA28ED6762003B6FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219CB2A928ED6762003B6FC4 /* Assets.xcassets */; };
 		219CB2AD28ED6762003B6FC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219CB2AB28ED6762003B6FC4 /* LaunchScreen.storyboard */; };
 		21C6BC6928EF1BC100573BE8 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6BC6828EF1BC100573BE8 /* MainTabBarController.swift */; };
+		21C6BC6C28EF208000573BE8 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6BC6B28EF208000573BE8 /* Tab1ViewController.swift */; };
+		21C6BC6E28EF209000573BE8 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6BC6D28EF209000573BE8 /* Tab2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		219CB2AC28ED6762003B6FC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		219CB2AE28ED6762003B6FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21C6BC6828EF1BC100573BE8 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		21C6BC6B28EF208000573BE8 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		21C6BC6D28EF209000573BE8 /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				21C6BC6828EF1BC100573BE8 /* MainTabBarController.swift */,
+				21C6BC6B28EF208000573BE8 /* Tab1ViewController.swift */,
+				21C6BC6D28EF209000573BE8 /* Tab2ViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -152,7 +158,9 @@
 				21C6BC6928EF1BC100573BE8 /* MainTabBarController.swift in Sources */,
 				219CB2A528ED6761003B6FC4 /* ViewController.swift in Sources */,
 				219CB2A128ED6761003B6FC4 /* AppDelegate.swift in Sources */,
+				21C6BC6C28EF208000573BE8 /* Tab1ViewController.swift in Sources */,
 				219CB2A328ED6761003B6FC4 /* SceneDelegate.swift in Sources */,
+				21C6BC6E28EF209000573BE8 /* Tab2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
